@@ -20,7 +20,7 @@ h1, h2, h3, a {
   color: var(--text-color);
 } 
 
-p {
+p, li {
   font-family: 'Lora', serif;
   color: var(--text-color);
 }
