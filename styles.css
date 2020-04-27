@@ -47,3 +47,8 @@ h3 {
   fill: var(--text-color);
   height: 4.5rem;
 }
+
+.tech-stack__list-item svg {
+  fill: var(--accent-color);
+  height: 4.5rem;
+}
