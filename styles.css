@@ -4,15 +4,23 @@
   padding: 0;
 }
 
+:root {
+  --bg-color: hsl(13, 64%, 96%);
+  --text-color: hsl(173, 26%, 14%);
+  --accent-color: hsl(357, 69%, 76%);
+}
+
 body {
-  background-color: hsl(13, 64%, 96%);
-  color: hsl(173, 26%, 14%);
+  background-color: var(--bg-color);
 }
 
 h1, h2, h3, a {
   font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--text-color);
 } 
 
 p {
   font-family: 'Lora', serif;
+  color: var(--text-color);
 }
