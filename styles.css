@@ -78,9 +78,14 @@ nav {
   fill: var(--hover-color);
 }
 
+.contact__info {
+  display: flex;
+}
+
 .contact__info svg {
   fill: var(--text-color);
-  height: 5rem;
+  height: 4rem;
+  margin: 0 2rem 0 0;
 }
 
 .tech-stack__list-item svg {
