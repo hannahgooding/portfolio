@@ -106,6 +106,7 @@ nav {
   border: none;
   background-color: transparent;
   padding: 2rem;
+  cursor: pointer;
 }
 
 .nav__page-links {
