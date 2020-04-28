@@ -93,7 +93,8 @@ nav {
 }
 
 .nav__menu-toggle:checked ~ nav {
-  display: flex;
+  display: block;
+  width: 100%;
 }
 
 .nav__menu-toggle:not(:checked) + label > .nav__menu-icon--close {
@@ -181,7 +182,8 @@ nav {
   .nav__menu-icon {
     display: none;
   }
-  nav {
+  .nav__menu-toggle:checked ~ nav,
+  .nav__menu-toggle:not(:checked) ~ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
