@@ -8,6 +8,7 @@
   --bg-color: hsl(13, 64%, 96%);
   --text-color: hsl(173, 26%, 14%);
   --accent-color: hsl(357, 69%, 76%);
+  --hover-color: hsl(174, 25%, 38%);
 }
 
 body {
@@ -43,13 +44,37 @@ h3 {
   font-size: 2rem;
 }
 
-.nav__page-links {
-  font-size: 2rem;
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.nav__page-links > a {
+  font-size: 3rem;
+  margin: 0 2rem 0 2rem;
+}
+
+.nav__social-links > a {
+  margin: 0 .5rem 0 .5rem;
 }
 
 .nav__social-links-icon svg {
   fill: var(--text-color);
-  height: 4.5rem;
+  height: 3rem;
+}
+
+.nav__social-links-icon svg:hover {
+  fill: var(--hover-color);
 }
 
 .contact__info svg {
