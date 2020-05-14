@@ -114,10 +114,6 @@ a:hover {
   align-items: center;
 }
 
-#Typing {
-  animation: infinite;
-}
-
 #Line1 {
   opacity: 0;
   animation: fadeIn 1s infinite;
