@@ -15,7 +15,11 @@
 body {
   background-color: var(--bg-color);
   max-width: 100vw;
-  max-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
 /* Header Navbar Styling */
@@ -73,7 +77,8 @@ body {
 p, li, a {
   font-family: 'Lora', serif;
   color: var(--text-color);
-  line-height: 1.5;
+  line-height: 2;
+  text-align: center;
 }
 
 a:hover {
@@ -107,7 +112,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 /* About Section Styling */
@@ -147,8 +151,10 @@ a:hover {
   margin: 1rem;
 }
 
-.project-card__caption {
-  text-align: center;
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Landscape tablets */
@@ -158,4 +164,17 @@ a:hover {
 
 /* Laptops and desktop monitors */
 @media only screen and (min-width: 992px) {
+  .top-navbar__link {
+    font-size: 1.5rem;
+  }
+  .page {
+    margin: 6rem 10rem 6rem 10rem;
+  }
+  .project-card__caption {
+    max-width: 80%;
+  }
+  .testimonials-card__quote {
+    align-self: center;
+    max-width: 80%;
+  }
 }
