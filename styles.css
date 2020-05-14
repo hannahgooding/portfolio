@@ -12,143 +12,149 @@
   --hover-color: hsl(174, 25%, 38%);
 }
 
-.sr-only {
-  display: none;
-}
-
 body {
   background-color: var(--bg-color);
+  max-width: 100vw;
 }
 
-main {
-  margin: 5rem;
+section {
+  min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
-h1, h2, h3, a {
+/* Header Navbar Styling */
+.top-navbar {
+  background-color: var(--accent-color);
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  top: 0;
+  position: fixed;
+}
+
+.top-navbar__link {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: var(--text-color);
 }
 
-p, li {
-  font-family: 'Lora', serif;
+.top-navbar__link:link,
+.top-navbar__link:visited,
+.top-navbar__link:hover,
+.top-navbar__link:active {
+  text-decoration: none;
+}
+
+.top-navbar__link:hover {
+  color: var(--hover-color);
+}
+
+/* Main Styling */
+.page {
+  margin: 6rem 2rem 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__title,
+.page__subtitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   color: var(--text-color);
-}
-
-/* Font Sizes */
-h1 {
-  font-size: 5rem;
-  text-align: right;
-}
-
-h2 {
-  font-size: 2.25rem;
+  margin: 1rem 0;
   text-align: center;
 }
 
-h3 {
+.page__title {
+  font-size: 2rem;
+}
+
+.page__subtitle {
   font-size: 1.5rem;
 }
 
-.nav__page-links {
-  font-size: 1.75rem;
-}
-
-/* Link Styling */
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
+p, li, a {
+  font-family: 'Lora', serif;
+  color: var(--text-color);
+  line-height: 2;
+  text-align: center;
 }
 
 a:hover {
   color: var(--hover-color);
 }
 
-/* Navbar Styling */
-header {
+/* Footer Navbar Styling */
+.bottom-navbar {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
 }
 
-header svg {
+.bottom-navbar__link svg {
   fill: var(--text-color);
-  height: 2.5rem;
+  height: 2rem;
+  margin: 0 1rem;
 }
 
-header svg:hover {
+.bottom-navbar__link svg:hover {
   fill: var(--hover-color);
 }
 
-nav {
-  display: none;
-  padding: 2rem;
-  width: 100%;
-}
-
-.nav__menu-toggle {
-  display: none;
-}
-
-.nav__menu-toggle:checked + label > .nav__menu-icon--open {
-  display: none;
-}
-
-.nav__menu-toggle:checked ~ nav {
-  display: block;
-  width: 100%;
-}
-
-.nav__menu-toggle:not(:checked) + label > .nav__menu-icon--close {
-  display: none;
-}
-
-.nav__menu-icon {
-  display: flex;
-  border: none;
-  background-color: transparent;
-  padding: 2rem;
-  cursor: pointer;
-}
-
-.nav__page-links {
+/* Landing Section Styling */
+.landing-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.nav__page-links a {
-  margin: .5rem 0 .5rem 0;
-}
-
-.nav__social-links {
-  display: flex; 
-  justify-content: center;
-  flex-direction: row;
-}
-
-.nav__social-links-icon {
+/* About Section Styling */
+.tech-stack__list {
+  list-style: none;
   display: flex;
-  align-self: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.nav__social-links-icon svg {
-  margin: .5rem;
-}
-
-/* Homepage Styling */
-.contact__info {
+.tech-stack__list-item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
 }
 
-.contact__info svg {
-  fill: var(--text-color);
-  height: 4rem;
-  margin: 0 2rem 0 0;
-}
-
-/* About Page Styling */
 .tech-stack__list-item svg {
   fill: var(--accent-color);
-  height: 4.5rem;
+  height: 3rem;
+}
+
+/* Work Section Styling */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.project-card__img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Landscape tablets */
@@ -158,45 +164,17 @@ nav {
 
 /* Laptops and desktop monitors */
 @media only screen and (min-width: 992px) {
-  /* Font Sizes */
-  h1 { 
-    font-size: 7.5rem; 
+  .top-navbar__link {
+    font-size: 1.5rem;
   }
-  h2 { 
-    font-size: 3rem; 
+  .page {
+    margin: 6rem 10rem 6rem 10rem;
   }
-  h3 { 
-    font-size: 2rem; 
+  .project-card__caption {
+    max-width: 80%;
   }
-  .nav__page-links { 
-    font-size: 3rem; 
-  }
-  /* Navbar Styling */
-  header {
-    background-color: var(--bg-color);
-    display: flex;
-    flex-direction: row;
-  }
-  header svg {
-    height: 3rem;
-  }
-  .nav__menu-icon {
-    display: none;
-  }
-  .nav__menu-toggle:checked ~ nav,
-  .nav__menu-toggle:not(:checked) ~ nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .nav__page-links {
-    display: flex;
-    flex-direction: row;
-  }
-  .nav__page-links a {
-    margin: 0 2rem 0 2rem;
-  }
-  .nav__social-links-icon svg {
-    margin: 0 .5rem 0 .5rem;
+  .testimonials-card__quote {
+    align-self: center;
+    max-width: 80%;
   }
 }
