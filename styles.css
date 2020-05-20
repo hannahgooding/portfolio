@@ -8,8 +8,8 @@
 :root {
   --bg-color: hsl(337, 62%, 84%);
   --text-color: hsl(173, 26%, 14%);
-  --accent-color: hsl(337, 77%, 78%);
-  --hover-color: hsl(0, 0%, 100%);
+  --accent-color-light: hsl(337, 77%, 78%);
+  --accent-color-dark: hsl(337, 77%, 50%);
 }
 
 body {
@@ -24,7 +24,7 @@ section {
 
 /* Header Navbar Styling */
 .top-navbar {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-light);
   padding: 1rem;
   width: 100%;
   display: flex;
@@ -48,7 +48,7 @@ section {
 }
 
 .top-navbar__link:hover {
-  color: var(--hover-color);
+  color: var(--accent-color-dark);
 }
 
 /* Main Styling */
@@ -77,6 +77,7 @@ section {
 .page__title {
   font-size: 2rem;
   margin: 3rem;
+  color: var(--accent-color-dark)
 }
 
 .page__subtitle {
@@ -91,8 +92,12 @@ p, li, a {
   text-align: center;
 }
 
+p {
+  padding-bottom: 1.5rem;
+}
+
 a:hover {
-  color: var(--hover-color);
+  color: var(--accent-color-dark);
 }
 
 /* Footer Navbar Styling */
@@ -113,7 +118,7 @@ a:hover {
 }
 
 .bottom-navbar__link svg:hover {
-  fill: var(--hover-color);
+  fill: var(--accent-color-dark);
 }
 
 /* Landing Section Styling */
@@ -214,8 +219,12 @@ a:hover {
   margin: 1rem;
 }
 
+.tech-stack__list-item p {
+  font-weight: 600;
+}
+
 .tech-stack__list-item svg {
-  fill: var(--accent-color);
+  fill: var(--accent-color-dark);
   height: 3rem;
 }
 
@@ -245,6 +254,9 @@ a:hover {
 
 /* Landscape tablets */
 @media only screen and (min-width: 768px) {
+  p, li, a {
+    font-size: 1.1rem;
+  }
   .top-navbar__link {
     font-size: 1.5rem;
   }
@@ -258,6 +270,9 @@ a:hover {
 
 /* Laptops and desktop monitors */
 @media only screen and (min-width: 992px) {
+  p, li, a {
+    font-size: 1.25rem;
+  }
   .top-navbar__link {
     font-size: 1.5rem;
   }
