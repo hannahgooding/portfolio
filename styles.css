@@ -19,7 +19,6 @@ body {
 
 section {
   min-height: 100vh;
-  margin-bottom: 10rem;
 }
 
 /* Header Navbar Styling */
@@ -52,26 +51,35 @@ section {
 
 /* Main Styling */
 .page {
-  margin: 6rem 2rem 6rem 2rem;
+  margin: 0 2rem 0 2rem;
   display: flex;
   flex-direction: column;
 }
 
-.page__title,
-.page__subtitle {
+.page-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-padding {
+  padding-top: 3rem;
+}
+
+.page__titles {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: var(--text-color);
-  margin: 1rem 0;
   text-align: center;
 }
 
 .page__title {
   font-size: 2rem;
+  margin: 3rem;
 }
 
 .page__subtitle {
   font-size: 1.5rem;
+  margin: 2rem;
 }
 
 p, li, a {
@@ -112,6 +120,19 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.landing-page__title {
+  font-size: 2rem;
+}
+
+.landing-page__subtitle {
+  font-size: 1.5rem;
+}
+
+.landing-section__svg {
+  height: 50vh;
+  width: 90vw;
 }
 
 #Line1 {
@@ -209,6 +230,7 @@ a:hover {
 .project-card__title {
   font-size: 1.25rem;
   margin: 1rem;
+  color: var(--text-color);
 }
 
 .testimonials-card {
@@ -219,7 +241,12 @@ a:hover {
 
 /* Landscape tablets */
 @media only screen and (min-width: 768px) {
-
+  .landing-page__title {
+    font-size: 3rem;
+  }
+  .landing-page__subtitle {
+    font-size: 2rem;
+  }
 }
 
 /* Laptops and desktop monitors */
@@ -229,6 +256,12 @@ a:hover {
   }
   .page {
     margin: 6rem 10rem 6rem 10rem;
+  }
+  .landing-page__title {
+    font-size: 5rem;
+  }
+  .landing-page__subtitle {
+    font-size: 3rem;
   }
   .project-card__caption {
     max-width: 80%;
