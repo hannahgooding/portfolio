@@ -6,15 +6,16 @@
 }
 
 :root {
-  --bg-color: hsl(13, 64%, 96%);
+  --bg-color: hsl(337, 62%, 84%);
   --text-color: hsl(173, 26%, 14%);
-  --accent-color: hsl(357, 69%, 76%);
-  --hover-color: hsl(174, 25%, 38%);
+  --accent-color: hsl(337, 77%, 78%);
+  --hover-color: hsl(0, 0%, 100%);
 }
 
 body {
   background-color: var(--bg-color);
   max-width: 100vw;
+  font-family: 'Quicksand', sans-serif;
 }
 
 section {
@@ -33,7 +34,7 @@ section {
 }
 
 .top-navbar__link {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -66,7 +67,7 @@ section {
 }
 
 .page__titles {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   color: var(--text-color);
   text-align: center;
@@ -83,7 +84,7 @@ section {
 }
 
 p, li, a {
-  font-family: 'Lora', serif;
+  font-family: 'Quicksand', sans-serif;
   color: var(--text-color);
   line-height: 2;
   text-align: center;
