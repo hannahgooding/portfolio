@@ -36,6 +36,7 @@ section {
 .top-navbar__link {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
+  font-size: 1.2rem;
   color: var(--text-color);
 }
 
@@ -124,16 +125,18 @@ a:hover {
 }
 
 .landing-page__title {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .landing-page__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .landing-section__svg {
-  height: 50vh;
-  width: 90vw;
+  display: flex;
+  height: 40vh;
+  width: 60vw;
 }
 
 #Line1 {
@@ -242,6 +245,9 @@ a:hover {
 
 /* Landscape tablets */
 @media only screen and (min-width: 768px) {
+  .top-navbar__link {
+    font-size: 1.5rem;
+  }
   .landing-page__title {
     font-size: 3rem;
   }
@@ -263,6 +269,11 @@ a:hover {
   }
   .landing-page__subtitle {
     font-size: 3rem;
+  }
+  .landing-section__svg {
+    display: flex;
+    height: 40vh;
+    width: 40vw;
   }
   .project-card__caption {
     max-width: 80%;
