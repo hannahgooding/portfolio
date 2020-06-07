@@ -221,6 +221,9 @@ a:hover {
 
 .tech-stack__list-item p {
   font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 7rem;
 }
 
 .tech-stack__list-item svg {
@@ -233,17 +236,29 @@ a:hover {
   display: flex;
   flex-direction: column;
   place-items: center;
-}
-
-.project-card__img {
-  height: 8rem;
-  width: 8rem;
+  margin-bottom: 3rem;
 }
 
 .project-card__title {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin: 1rem;
   color: var(--text-color);
+}
+
+.project-card__links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.project-card__link {
+  color: var(--accent-color-dark);
+  text-decoration: none;
+}
+
+.project-card__link  svg{
+  stroke: var(--accent-color-dark);
 }
 
 .testimonials-card {
