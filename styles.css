@@ -92,7 +92,7 @@ p, li, a {
   text-align: center;
 }
 
-p {
+.paragraphs {
   padding-bottom: 1.5rem;
 }
 
@@ -209,26 +209,30 @@ a:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .tech-stack__list-item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 0.4rem;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
 }
 
 .tech-stack__list-item p {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  line-height: 1.1;
   text-align: center;
-  max-width: 7rem;
+  max-width: 4rem;
 }
 
 .tech-stack__list-item svg {
   fill: var(--accent-color-dark);
-  height: 3rem;
+  height: 2rem;
 }
 
 /* Work Section Styling */
@@ -281,6 +285,14 @@ a:hover {
   .landing-page__subtitle {
     font-size: 2rem;
   }
+  .tech-stack__list-item {
+    min-width: 5rem;
+    min-height: 5rem;
+    margin: 1rem;
+  }
+  .tech-stack__list-item svg {
+    height: 3rem;
+  }
 }
 
 /* Laptops and desktop monitors */
@@ -304,6 +316,11 @@ a:hover {
     display: flex;
     height: 40vh;
     width: 40vw;
+  }
+  .tech-stack__list-item {
+    min-width: 5rem;
+    min-height: 5rem;
+    margin: 1.5rem;
   }
   .project-card__caption {
     max-width: 80%;
