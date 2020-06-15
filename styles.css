@@ -149,6 +149,7 @@ a:hover {
   background: url('spritesheet.png');
   animation: sprite 1.5s steps(11) infinite;
   transform: scale(0.6);
+  z-index: -1;
 }
 
 @keyframes sprite {
