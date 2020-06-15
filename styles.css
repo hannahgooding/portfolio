@@ -144,10 +144,11 @@ a:hover {
 
 .landing-section__svg {
   height: 300px;
-  width: 350px;
+  width: 349.5px;
   margin: 2rem;
   background: url('spritesheet.png');
   animation: sprite 1.5s steps(11) infinite;
+  transform: scale(0.6);
 }
 
 @keyframes sprite {
@@ -238,6 +239,9 @@ a:hover {
   }
   .landing-page__subtitle {
     font-size: 2rem;
+  }
+  .landing-section__svg {
+    transform: scale(1);
   }
   .tech-stack__list-item {
     min-width: 5rem;
