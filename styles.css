@@ -145,13 +145,13 @@ a:hover {
 .landing-section__svg {
   height: 300px;
   width: 350px;
+  margin: 2rem;
   background: url('spritesheet.png');
   animation: sprite 1.5s steps(11) infinite;
 }
 
 @keyframes sprite {
-  from { background-position-x: 0px; }
-  to { background-position-x: -3850px; }
+  100% { background-position: -3850px; }
 }
 
 /* About Section Styling */
@@ -265,11 +265,6 @@ a:hover {
   }
   .landing-page__subtitle {
     font-size: 3rem;
-  }
-  .landing-section__svg {
-    display: flex;
-    height: 40vh;
-    width: 40vw;
   }
   .tech-stack__list-item {
     min-width: 5rem;
