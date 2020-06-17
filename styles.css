@@ -76,7 +76,7 @@ section {
 
 .page__title {
   font-size: 2rem;
-  margin: 3rem;
+  margin-bottom: 3rem;
   color: var(--accent-color-dark)
 }
 
@@ -193,12 +193,18 @@ a:hover {
   flex-direction: column;
   place-items: center;
   margin-bottom: 3rem;
+  padding: 1rem;
+  border: solid var(--text-color) 0.5px;
 }
 
 .project-card__title {
   font-size: 1.4rem;
   margin: 1rem;
   color: var(--text-color);
+}
+
+.project-card__caption {
+  margin-bottom: 1rem;
 }
 
 .project-card__links {
