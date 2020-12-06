@@ -36,7 +36,7 @@ section {
 .top-navbar__link {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--text-color);
 }
 
@@ -90,6 +90,7 @@ p, li, a {
   color: var(--text-color);
   line-height: 2;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .paragraphs {
@@ -125,7 +126,7 @@ a:hover {
   transition: ease-in-out;
 }
 
-/* Landing Section Styling */
+/* Landing Page Styling */
 .landing-section {
   display: flex;
   flex-direction: column;
@@ -156,7 +157,7 @@ a:hover {
   100% { background-position: -3850px; }
 }
 
-/* About Section Styling */
+/* About Page Styling */
 .tech-stack__list {
   list-style: none;
   display: flex;
@@ -175,11 +176,13 @@ a:hover {
 }
 
 .tech-stack__list-item p {
+  color: var(--accent-color-dark);
   font-weight: 600;
   font-size: 0.7rem;
   line-height: 1.1;
   text-align: center;
   max-width: 4rem;
+  margin-top: 0.2rem;
 }
 
 .tech-stack__list-item svg {
@@ -187,13 +190,41 @@ a:hover {
   height: 2rem;
 }
 
-/* Work Section Styling */
+/* Work Page Styling */
+.work-card {
+  max-width: 50%;
+  margin-bottom: 3rem;
+  border: solid var(--text-color) 0.5px;
+}
+
+/* .work-card a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} */
+
+.work-card__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Project Page Styling */
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
   place-items: center;
   margin-bottom: 3rem;
-  padding: 1rem;
   border: solid var(--text-color) 0.5px;
 }
 
@@ -203,27 +234,32 @@ a:hover {
   color: var(--text-color);
 }
 
-.project-card__caption {
+.project__img {
+  max-width: 30%;
+  margin: 1rem;
+}
+
+.project__caption {
   margin-bottom: 1rem;
 }
 
-.project-card__links {
+.project__links {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
 }
 
-.project-card__link {
+.project__link {
   color: var(--accent-color-dark);
   text-decoration: none;
 }
 
-.project-card__link svg{
+.project__link svg{
   stroke: var(--accent-color-dark);
 }
 
-.project-card__link svg:hover {
+.project__link svg:hover {
   stroke: var(--accent-color-light);
 }
 
@@ -236,7 +272,7 @@ a:hover {
 /* Landscape tablets */
 @media only screen and (min-width: 768px) {
   p, li, a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .top-navbar__link {
     font-size: 1.5rem;
