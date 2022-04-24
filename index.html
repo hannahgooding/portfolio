@@ -8,14 +8,6 @@
   <title>Hannah Gooding's Portfolio</title>
 </head>
 <body>
-  <header>
-    <nav role="navigation" class="top-navbar">
-      <a class="top-navbar__link" href="/">Home</a>
-      <a class="top-navbar__link" href="about.html">About</a>
-      <a class="top-navbar__link" href="work.html">Work</a>
-      <a class="top-navbar__link" href="contact.html">Contact</a>
-    </nav>
-  </header>
   <main class="page">
     <section id="landingPage" class="page-padding landing-section">
       <h1 class="landing-page__title page__titles">Hannah Gooding</h1>
@@ -23,29 +15,68 @@
       <div class="landing-section__svg">
       </div>
     </section>
+    <section id="about" class="page-padding">
+      <h2 class="page__title page__titles">About Me</h2>
+        <p class="paragraphs">I have been a Software Engineer at Lyst since October 2020.</p>
+        <p class="paragraphs">Before that I graduated from the Founders and Coders coding bootcamp in July 2020.</p>
+        <p class="paragraphs">My previous experience working in fashion retail and media exposed me to the wastefulness of the industry on a global scale. I was inspired to move into programming because I saw how companies are using technology to solve life-changing problems, particularly with sustainability and accessibility.</p>
+        <p class="paragraphs">I made my first steps into coding through talking to developers at workshops and meet-ups, so now I enjoy paying it forward by coaching at codebar and for Code First Girls.</p>
+      <h3 class="page__subtitle page__titles section-padding">Tech Stack</h3>
+        <ul class="tech-stack__list">
+          <li class="tech-stack__list-item">
+            <svg role="img" viewBox="0 0 25 25">
+              <use xlink:href="./icons.svg#html-icon"></use>
+            </svg>
+            <p>HTML</p>
+          </li>
+          <li class="tech-stack__list-item">
+            <svg role="img" viewBox="0 0 25 25">
+              <use xlink:href="./icons.svg#css-icon"></use>
+            </svg>
+            <p>CSS</p>
+          </li>
+          <li class="tech-stack__list-item">
+            <svg role="img" viewBox="0 0 25 25">
+              <use xlink:href="./icons.svg#javascript-icon"></use>
+            </svg>
+            <p>JavaScript</p>
+          </li>
+          <li class="tech-stack__list-item">
+            <svg role="img" viewBox="0 0 30 30">
+              <use xlink:href="./icons.svg#python-icon"></use>
+            </svg>
+            <p>Python</p>
+          </li>
+          <li class="tech-stack__list-item">
+            <svg role="img" viewBox="0 0 25 25">
+              <use xlink:href="./icons.svg#postgresql-icon"></use>
+            </svg>
+            <p>PostgreSQL</p>
+          </li>
+        </ul>
+    </section>
+    <section class="page-padding contact-section">
+      <h2 class="page__title page__titles">Contact Me</h2>
+      <p>Email: hannah.gooding@yahoo.com</p>
+      <ul class="contact-section__link">
+        <a aria-label="GitHub Profile Link" class="contact-section__link" href="https://github.com/hannahgooding" target="_blank">
+          <svg role="img" viewBox="0 0 25 25">
+            <use xlink:href="./icons.svg#github-icon"></use>
+          </svg>
+        </a>
+        <a aria-label="LinkedIn Profile Link" class="contact-section__link" href="https://www.linkedin.com/in/hannahwsgooding/" target="_blank">
+          <svg role="img" viewBox="0 0 25 25">
+            <use xlink:href="./icons.svg#linkedin-icon"></use>
+          </svg>
+        </a>
+        <a aria-label="Twitter Profile Link" class="contact-section__link" href="https://twitter.com/hannahwsgooding" target="_blank">
+          <svg role="img" viewBox="0 0 25 25">
+            <use xlink:href="./icons.svg#twitter-icon"></use>
+          </svg>
+        </a>
+      </ul>
+    </section>
   </main>
-  <footer role="navigation" class="bottom-navbar">
-    <a aria-label="GitHub Profile Link" class="bottom-navbar__link" href="https://github.com/hannahgooding" target="_blank">
-      <svg role="img" viewBox="0 0 25 25">
-        <use xlink:href="./icons.svg#github-icon"></use>
-      </svg>
-    </a>
-    <a aria-label="LinkedIn Profile Link" class="bottom-navbar__link" href="https://www.linkedin.com/in/hannahwsgooding/" target="_blank">
-      <svg role="img" viewBox="0 0 25 25">
-        <use xlink:href="./icons.svg#linkedin-icon"></use>
-      </svg>
-    </a>
-    <a aria-label="Twitter Profile Link" class="bottom-navbar__link" href="https://twitter.com/hannahwsgooding" target="_blank">
-      <svg role="img" viewBox="0 0 25 25">
-        <use xlink:href="./icons.svg#twitter-icon"></use>
-      </svg>
-    </a>
-    <a aria-label="Wordpress Blog Link" class="bottom-navbar__link" href="https://hannahwsgooding.wordpress.com/" target="_blank">
-      <svg role="img" viewBox="0 0 25 25">
-        <use xlink:href="./icons.svg#wordpress-icon"></use>
-      </svg>
-    </a>
-  </footer>
 </body>
 <script src="script.js"></script>
 </html>
